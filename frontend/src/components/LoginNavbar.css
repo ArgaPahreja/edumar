@@ -1,0 +1,38 @@
+.img{
+
+
+}
+.logout{
+    margin-left: 67%;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+    position:absolute;
+}
+.logout:hover {
+    font-weight: 100;
+}
+.logout.active {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #3db2d2;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 6%);
+    width: 100%;
+    z-index: 10;
+}
+.akun {
+    position: absolute;
+    margin-left: 91%;
+    padding-top: 22px;
+    list-style: none;
+}
+.drop {
+    margin-left: 20px;
+}
+.akun2{
+    position: absolute;
+    margin-left: 90%;
+    padding-top: 25px;
+    list-style: none;
+}
