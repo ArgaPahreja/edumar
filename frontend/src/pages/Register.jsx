@@ -36,7 +36,7 @@ const Register = ({role}) => {
       password: pass,
     };
     console.log(registered);
-    axios.post("http://edumar-api.vercel.app/users/", registered).then((response) => {
+    axios.post("https://edumar-api.vercel.app/users/", registered).then((response) => {
       console.log(response.status);
       console.log(response.data);
     });
