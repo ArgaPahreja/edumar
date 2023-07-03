@@ -69,7 +69,7 @@ const Anlyze = (CUId) => {
 
   const getExamInfos = async () => {
     const { data } = await axios.get(
-      `http://localhost:5000/userexams/exam/${id.id}`
+      `http://edumar-api.vercel.app/userexams/exam/${id.id}`
     ); // Melakukan permintaan GET ke endpoint API
     setExamInfo(data); // Mengupdate state examInfo dengan data hasil permintaan
     setStart(false); // Mengupdate state start menjadi false
