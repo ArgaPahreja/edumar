@@ -107,7 +107,7 @@ const CreateQuiz = () => {
       };
       console.log(newQuestion);
       axios
-        .post("http://edumar-api.vercel.app/examquestions/", newQuestion)
+        .post("https://edumar-api.vercel.app/examquestions/", newQuestion)
         .then((response) => {
           console.log(response.status);
           const data = response.data._id;
@@ -134,7 +134,7 @@ const CreateQuiz = () => {
       };
       console.log(option);
       axios
-        .put("http://edumar-api.vercel.app/examquestions/" + data, option)
+        .put("https://edumar-api.vercel.app/examquestions/" + data, option)
         .then((response) => {
           console.log(response.status);
           console.log(response);
@@ -175,7 +175,7 @@ const CreateQuiz = () => {
 
   const getExams = async () => {
     const { data } = await axios.get(
-      "http://edumar-api.vercel.app/examquestions/" + id.id + "?role=admin"
+      "https://edumar-api.vercel.app/examquestions/" + id.id + "?role=admin"
     );
     setExamDatas(data);
     console.log(data[0].options);
@@ -183,7 +183,7 @@ const CreateQuiz = () => {
 
   const deleteQuestion = (propId) => {
     axios
-      .delete("http://edumar-api.vercel.app/examquestions/" + propId)
+      .delete("https://edumar-api.vercel.app/examquestions/" + propId)
       .then((response) => {
         console.log(response.status);
         console.log(response.data);
