@@ -50,7 +50,7 @@ const QuizController = (CUId) => {
   // Fungsi untuk mendapatkan daftar pertanyaan quiz
   const getExams = async () => {
     const { data } = await axios.get(
-      "http://edumar-api.vercel.app/examquestions/" + id.id
+      "https://edumar-api.vercel.app/examquestions/" + id.id
     );
     setQuestions(data);
     userCheck();
@@ -60,8 +60,8 @@ const QuizController = (CUId) => {
   const securityData = async () => {
     axios
       .all([
-        await axios.get("http://edumar-api.vercel.app/users/" + CUId.CUId._id),
-        await axios.get("http://edumar-api.vercel.app/exam/exam/" + id.id),
+        await axios.get("https://edumar-api.vercel.app/users/" + CUId.CUId._id),
+        await axios.get("https://edumar-api.vercel.app/exam/exam/" + id.id),
       ])
       .then(
         axios.spread((data, data2) => {
@@ -85,7 +85,7 @@ const QuizController = (CUId) => {
               },
             };
             axios
-              .post("http://edumar-api.vercel.app/userexams/", dummyData)
+              .post("https://edumar-api.vercel.app/userexams/", dummyData)
               .then((response) => {
                 console.log(response.status);
                 console.log("userexamsdata", response.data);
@@ -104,7 +104,7 @@ const QuizController = (CUId) => {
   const userCheck = async () => {
     try {
       const { data } = await axios.get(
-        "http://edumar-api.vercel.app/userexams/" + CUId.CUId._id
+        "https://edumar-api.vercel.app/userexams/" + CUId.CUId._id
       );
       const myData = await Promise.all(data.map((d) => d.examId));
       for (let i = 0; i <= myData.length; i++) {
