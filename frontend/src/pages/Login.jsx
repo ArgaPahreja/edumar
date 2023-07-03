@@ -40,7 +40,7 @@ const Login = () => {
     try {
       // Melakukan permintaan POST ke endpoint login
       axios
-        .post("http://edumar-api.vercel.app/users/login", userCheck)
+        .post("https://edumar-api.vercel.app/users/login", userCheck)
         .then((response) => {
           console.log(response.status);
           console.log(response.data);
