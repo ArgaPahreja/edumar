@@ -23,6 +23,10 @@ app.use('/examquestions', examQuestionsRoute)
 app.use('/exam', examRoute)
 app.use('/userexams', userExamsRoute)
 
+app.get("/", (req, res) => {
+    res.send("Express on Vercel");
+  });
+
 app.listen(5000, () => {
     console.log('Server started on 5000')
 })
