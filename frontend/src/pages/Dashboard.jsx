@@ -64,14 +64,14 @@ const Dashboard = (CUId) => {
 
   // Fungsi untuk mengambil daftar nama ujian dari server
   const getExamNames = async () => {
-    const { data } = await axios.get(`http://edumar-api.vercel.app/exam/`);
+    const { data } = await axios.get(`https://edumar-api.vercel.app/exam/`);
     setExamNameStorage(data);
     setIsLoading(false);
   };
 
   // Fungsi untuk menghapus ujian berdasarkan ID
   const deleteExam = (id) => {
-    axios.delete(`http://edumar-api.vercel.app/exam/${id}`).then((response) => {
+    axios.delete(`https://edumar-api.vercel.app/exam/${id}`).then((response) => {
       console.log(response.status);
       console.log(response.data);
     });
@@ -94,7 +94,7 @@ const Dashboard = (CUId) => {
         examname: examName,
       };
       console.log(newExam);
-      axios.post("http://edumar-api.vercel.app/exam/", newExam).then((response) => {
+      axios.post("https://edumar-api.vercel.app/exam/", newExam).then((response) => {
         console.log(response.status);
         console.log(response.data);
       });
@@ -148,7 +148,7 @@ const Dashboard = (CUId) => {
                         scope="row"
                         onClick={() => {
                           navigator.clipboard.writeText(
-                            "http://edumar-api.vercel.app/quiz/" + name._id
+                            "https://edumar-api.vercel.app/quiz/" + name._id
                           );
                         }}
                       >
@@ -373,7 +373,7 @@ const Dashboard = (CUId) => {
                         scope="row"
                         onClick={() => {
                           navigator.clipboard.writeText(
-                            "http://edumar-api.vercel.app/quiz/" + name._id
+                            "https://edumar-api.vercel.app/quiz/" + name._id
                           );
                         }}
                       >
