@@ -75,25 +75,40 @@ p {
 /*------------ home ----------*/
 .left,
 .right {
-    width: 100%;
+    width: 97%;
+    height: 100%;
+}
+.left h1{
+    width: 60%;
+    font-size: 15px;
+    display: flex;
 }
 .home .container {
-    flex-direction: column;
-    flex-direction: column-reverse;
+    flex-direction:column;
 }
 .home {
-    height: 134vh;
+    height: 45vh;
 }
-.home .img {
-    height: 100%;
-    width: 100%;
-    position: relative;
+.primary-btn{
+    margin-top: 30px;
+    margin-left: 10%;
+    background: #ffba08;
+    font-size: 10px;
+    display: inline-flex;
+    text-align: center;
+    padding: 10px 15px;
+}
+.up{
+
+}
+.down{
+    position: absolute;
 }
 .home img {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    transform: scale(1);
+    height: 20%;
+    width: 60%;
+    display:flex;
+    position:absolute;
 }
 }  
 /*------------ home ----------*/
