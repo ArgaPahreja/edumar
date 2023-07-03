@@ -76,7 +76,7 @@ const Configure = () => {
   // Mengambil data konfigurasi ujian
   const getConfigureData = async () => {
     await axios
-      .get(`http://edumar-api.vercel.app/exam/exam/` + id.id)
+      .get(`https://edumar-api.vercel.app/exam/exam/` + id.id)
       .then((response) => {
         console.log(response.status);
         setMyStartDatas(response.data);
@@ -93,7 +93,7 @@ const Configure = () => {
       passGrade: examGrade,
     };
     axios
-      .patch(`http://edumar-api.vercel.app/exam/${id.id}`, exam)
+      .patch(`https://edumar-api.vercel.app/exam/${id.id}`, exam)
       .then((response) => {
         console.log(response.status);
         console.log(response.data);
