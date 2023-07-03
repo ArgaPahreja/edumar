@@ -55,7 +55,7 @@ const ExamReview = () => {
   // Fungsi untuk mengambil informasi ujian dari server
   const getExamInfos = async () => {
     const { data } = await axios.get(
-      `http://edumar-api.vercel.app/userexams/exam/${id.id}`
+      `https://edumar-api.vercel.app/userexams/exam/${id.id}`
     );
     console.log(data);
     console.log(data[0].examReview[0].qAnswers);
