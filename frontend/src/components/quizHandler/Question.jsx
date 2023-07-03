@@ -97,7 +97,7 @@ const Question = ({
   // Fungsi untuk memeriksa pembuat ujian dan mengatur kata sandi jika bukan pembuat
   const handleCreatorUser = async () => {
     const { data } = await axios.get(
-      "http://edumar-api.vercel.app/exam/exam/" + id.id
+      "httpss://edumar-api.vercel.app/exam/exam/" + id.id
     );
     if (data[0].creatorUserId !== userId) {
       localStorage.setItem("startTime", new Date().getTime());
@@ -151,7 +151,7 @@ const Question = ({
         grade: hasil,
       };
       axios
-        .patch(`http://edumar-api.vercel.app/userexams/${userExam_id}`, userExam)
+        .patch(`https://edumar-api.vercel.app/userexams/${userExam_id}`, userExam)
         .then((response) => {
           console.log(response.status);
           console.log(response.data);
@@ -179,7 +179,7 @@ const Question = ({
       console.log("useropt,ques", userOptions);
       console.log("exam_id,ques", exam_id);
       axios
-        .put(`http://edumar-api.vercel.app/userexams/${userExam_id}`, userOptions)
+        .put(`httpss://edumar-api.vercel.app/userexams/${userExam_id}`, userOptions)
         .then((response) => {
           console.log(response.status);
           console.log(response.data);
