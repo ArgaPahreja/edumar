@@ -76,7 +76,7 @@ const Result = (CUId) => {
 
     try {
       const { data } = await axios.get(
-        `http://edumar-api.vercel.app/userexams?examId=${id.id}`
+        `https://edumar-api.vercel.app/userexams?examId=${id.id}`
       );
       setLeaderboard(data);
       console.log(data);
@@ -93,7 +93,7 @@ const Result = (CUId) => {
 
     try {
       const response = await axios.get(
-        `http://edumar-api.vercel.app/exam/exam/${id.id}`
+        `https://edumar-api.vercel.app/exam/exam/${id.id}`
       );
       setPassGrade(response.data);
       setTotalDuration(response.data[0].time);
@@ -109,7 +109,7 @@ const Result = (CUId) => {
   const getExamNames = async () => {
     try {
       const { data } = await axios.get(
-        `http://edumar-api.vercel.app/userexams/exam/${id.id}?userId=${CUId.CUId._id}`
+        `https://edumar-api.vercel.app/userexams/exam/${id.id}?userId=${CUId.CUId._id}`
       );
       const examId = data[0].examId;
 
