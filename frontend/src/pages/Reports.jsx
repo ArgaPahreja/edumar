@@ -62,7 +62,7 @@ const Reports = (CUId) => {
   // Fungsi untuk mendapatkan data pengguna
   const getUserDatas = async () => {
     const { data } = await axios.get(
-      `http://edumar-api.vercel.app/userexams/` + CUId.CUId._id
+      `https://edumar-api.vercel.app/userexams/` + CUId.CUId._id
     );
     setUserDatas(data);
     console.log(data);
@@ -70,7 +70,7 @@ const Reports = (CUId) => {
 
   // Fungsi untuk mendapatkan data ujian
   const getExamDatas = async () => {
-    await axios.get(`http://edumar-api.vercel.app/exam`).then((response) => {
+    await axios.get(`https://edumar-api.vercel.app/exam`).then((response) => {
       setExamDatas(response.data);
       console.log(response.data);
       setIsLoading(false);
