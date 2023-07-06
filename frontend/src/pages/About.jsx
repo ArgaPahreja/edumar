@@ -16,7 +16,7 @@ function About() {
     <p className="abot text-black" style={{textAlign:"justify"}}>
       EDUMAR also known as Educational Grammar is a website-based English quiz that focuses on grammar questions.
       Each level quiz can contain 30 questions for the easiest 
-      to 135 questions for the most difficult and each question is always different. 
+      to 130 questions for the most difficult and each question is always different. 
       This website is very useful to practice your English grammar skills and of course it is free.
     </p>
     
