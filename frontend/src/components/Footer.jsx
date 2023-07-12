@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import LocationCityIcon from '@mui/icons-material/LocationCity';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
@@ -40,10 +41,10 @@ const Footer = () => {
           <div className='box'>
             <h4>Help & Support</h4>
           <ul>
-              <li>Home</li>
-              <li>Login</li>
-              <li>About</li>
-              <li>Register</li>
+              <li><Link to='/' style={{textDecoration: "none", color : "black"}}>Home</Link></li>
+              <li><Link to='/login' style={{textDecoration: "none", color : "black"}}>Login</Link></li>
+              <li><Link to='/about' style={{textDecoration: "none", color : "black"}}>About</Link></li>
+              <li><Link to='/register' style={{textDecoration: "none", color : "black"}}>Register</Link></li>
               
               {/* <li>Help</li> */}
             </ul>
@@ -55,15 +56,15 @@ const Footer = () => {
               <label><LocationCityIcon />&nbsp;&nbsp;Location :&nbsp; &nbsp; &nbsp; 
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              Sukabumi, Indonesia</label>
+              <a href="https://goo.gl/maps/TcqYhHHN9V8eTntG7" className="text-black">Sukabumi, Indonesia</a></label>
             </div>
             <div className='icon'>
               <label> <PhoneIcon />&nbsp;&nbsp; Phone :  
                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                +62 858-6030-1670</label>
+                <a href="https://wa.me/+6285860301670/?text=teksberkodeurl" className="text-black">+62 858-6030-1670</a></label>
             </div>
             <div className='icon'>
-              <label><EmailIcon />&nbsp;&nbsp; Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;support@edumar.com</label>
+              <label><EmailIcon />&nbsp;&nbsp; Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:argapahreja8@gmail.com" className="text-black">support@edumar.com</a></label>
             </div>
           </div>
         </div>
