@@ -61,7 +61,7 @@ const Footer = () => {
             <div className='icon'>
               <label> <PhoneIcon />&nbsp;&nbsp; Phone :  
                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <a href="https://wa.me/+6285860301670/?text=teksberkodeurl" className="text-black">+62 858-6030-1670</a></label>
+                <a href="https://wa.me/+6285860301670/?text=Assalamualaikum..." className="text-black">+62 858-6030-1670</a></label>
             </div>
             <div className='icon'>
               <label><EmailIcon />&nbsp;&nbsp; Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:argapahreja8@gmail.com" className="text-black">support@edumar.com</a></label>
